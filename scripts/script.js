@@ -10,17 +10,25 @@ window.addEventListener('scroll', function() {
 });
 
 jQuery(document).ready(function(){
-	$objWindow = $(window);
-	$('div[data-type="background"]').each(function(){
-		var $bgObj = $(this);
-		$(window).scroll(function() {
-			var yPos = -($objWindow.scrollTop() / $bgObj.data('speed')); 
-           
-			var coords = '100% '+ yPos + 'px';
-            // Animate the background
-			 $bgObj.css({ backgroundPosition: coords });
-           
-		});
-		
-	});
+    // Check if the device is a mobile device
+    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    
+    // Function to handle parallax effect
+    function parallaxScroll() {
+        if (!isMobile) { // Only apply parallax effect on non-mobile devices
+            var $objWindow = $(window);
+            $('div[data-type="background"]').each(function(){
+                var $bgObj = $(this);
+                var yPos = -($objWindow.scrollTop() / $bgObj.data('speed'));
+                var coords = '100% ' + yPos + 'px';
+                $bgObj.css({ backgroundPosition: coords });
+            });
+        }
+    }
+
+    // Call the parallaxScroll function on page load
+    parallaxScroll();
+
+    // Call the parallaxScroll function when scrolling
+    $(window).scroll(parallaxScroll);
 });
