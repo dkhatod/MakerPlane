@@ -1,2 +1,2 @@
 # MakerPlane
-<a href="dkhatod.github.io/MakerPlane">Link</a>
+<a href="https://dkhatod.github.io/MakerPlane/">Link</a>
