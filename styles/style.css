@@ -180,13 +180,13 @@ body {
 
 
 .column img {
-    max-width: 400px; /* Adjust as needed */
+    max-width: 400px; 
     max-height: 320px;
     height: auto;
-    margin-top: 20px; /* Adjust spacing between text and image */
+    margin-top: 20px; 
     border-radius: 8px;
     margin-bottom: 20px;
-    width: 100%; /* Make images fill their container */
+    width: 100%; 
     height: 230px; /* Set a fixed height for all images */
     object-fit: cover; /* Ensure images maintain their aspect ratio */
     border-radius: 8px; /* Round image slightly */
@@ -267,6 +267,7 @@ body {
     background-attachment: initial;
     background-image: url("../src/group3.png");
     background-size: contain;
+    background-repeat: no-repeat;
     min-height:100vh;
     max-width:100%;
 }
