@@ -12,7 +12,7 @@
 }
 
 .scroll-container::before {
-    content: '';
+    content: ''; /*pseudo element, needed for ::before to work.*/
     background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
     top: 0;
@@ -21,11 +21,6 @@
     height: 100%;
 }
 
-
-
-.scroll-container {
-    animation: scroll 3s linear infinite;
-}
 
 * {
     margin: 0;
@@ -94,7 +89,6 @@ body {
     color: #a0a0a0;
 }
 
-
 .splitter {
     text-align: center;
     margin-top: 5vh;
@@ -111,46 +105,6 @@ body {
 .main-content h1 {
     color: #fff;
     font-size: 3.5rem;
-}
-
-
-@media screen and (max-width: 768px) {
-
-    .list-item a {
-        font-size: 0.875rem;
-    }
-
-    .logo {
-        font-size: 0.875rem;
-    }
-}
-
-@media screen and (max-width: 578px) {
-
-    .list-item a {
-        font-size: 1rem;
-
-    }
-
-    .list-nav-bar.active {
-        right: 0;
-    }
-
-    .list-nav-bar {
-        display: flex;
-        position: fixed;
-        right: -100%;
-        top: 60px;
-        width: 35%;
-        background-color: rgba(0, 0, 0, 0.2);
-        text-align: center;
-        flex-direction: column;
-        transition: 0.7s;
-        gap: 18px;
-        border-radius: 0 0 10px 10px;
-    }
-
-
 }
 
 .red {

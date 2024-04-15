@@ -1,11 +1,14 @@
+window.onload = function() {
+    var scrollPosition = window.scrollY;
+    var newBackgroundSize = 50 + scrollPosition / 5 + '%'; /* initial page load */
+    document.querySelector('.scroll-container').style.backgroundSize = newBackgroundSize;
+  };
+
 
 window.addEventListener('scroll', function() {
     var scrollPosition = window.scrollY;
-    var newBackgroundSize = 50 + scrollPosition / 5 + '%'; /* Adjust the divisor to control the speed of shrinking */
+    var newBackgroundSize = 50 + scrollPosition / 5 + '%'; /* shrink */
     document.querySelector('.scroll-container').style.backgroundSize = newBackgroundSize;
-
-    var opacity = Math.min(0.5, scrollPosition / 1000); /* Adjust the divisor to control the speed of fading */
-    document.querySelector('.overlay').style.backgroundColor = 'rgba(0, 0, 0, ' + opacity + ')';
     
 });
 
@@ -13,9 +16,9 @@ jQuery(document).ready(function(){
     // Check if the device is a mobile device
     var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     
-    // Function to handle parallax effect
+
     function parallaxScroll() {
-        if (!isMobile) { // Only apply parallax effect on non-mobile devices
+        if (!isMobile) { 
             var $objWindow = $(window);
             $('div[data-type="background"]').each(function(){
                 var $bgObj = $(this);
@@ -25,10 +28,8 @@ jQuery(document).ready(function(){
             });
         }
     }
-
-    // Call the parallaxScroll function on page load
+    
+    // Calls parallaxScroll function on page load & when scrolling
     parallaxScroll();
-
-    // Call the parallaxScroll function when scrolling
     $(window).scroll(parallaxScroll);
 });
