@@ -268,11 +268,11 @@ body {
     background-image: url("../src/group3.png");
     background-size: contain;
     background-repeat: no-repeat;
-    min-height:100vh;
+    min-height: calc(100vh - 60px);
     max-width:100%;
 }
 
-@media not (hover: none) {
+@media  (hover: none) {
 #about {
     margin-top: 100px;
     background: url("../src/group3.png");
