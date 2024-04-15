@@ -266,7 +266,7 @@ body {
     margin-top: 100px;
     background-attachment: initial;
     background-image: url("../src/group3.png");
-    background-size: cover;
+    background-size: contain;
     min-height:100vh;
     max-width:100%;
 }
