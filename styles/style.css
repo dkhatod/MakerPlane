@@ -268,13 +268,13 @@ body {
     background-attachment: fixed;
     background-origin: initial;
     background-clip: initial;
-    background-size: cover;
-    
-    background-repeat:no-repeat;
-    background-position:100% 0;
-    position:relative;
-    min-height:1080px;
-  }
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+    position: relative;
+    min-height: 100vh; 
+}
+
   .splitter h3 {
     display: inline-block; 
     text-align: center; 
