@@ -255,14 +255,8 @@ a {
     text-decoration: none;
     color: rgb(137, 137, 213);
   }
-
-  :root {
-    --theme-gradient-heat: #c20ea1, #dd2d7f, #ee4c5e, #f46d41;
-  }
-#text-gradient {
-    color: #c20ea1;
-    background-image: linear-gradient(45deg, var(--theme-gradient-heat));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+#present {
+    background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
