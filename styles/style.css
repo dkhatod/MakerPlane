@@ -268,7 +268,7 @@ body {
     background-image: url("../src/group3.png");
     background-size: contain;
     background-repeat: no-repeat;
-    min-height: calc(100vh - 60px);
+    min-height: 25vh;
     max-width:100%;
 }
 
