@@ -264,6 +264,15 @@ body {
 }
 #about {
     margin-top: 100px;
+    background-attachment: initial;
+    background-image: url("../src/group3.png");
+    background-size: cover;
+    min-height:100vh;
+}
+
+@media not (hover: none) {
+#about {
+    margin-top: 100px;
     background: url("../src/group3.png");
     background-attachment: fixed;
     background-origin: initial;
@@ -274,12 +283,7 @@ body {
     position: relative;
     min-height: 100vh; 
     max-width:100%;
-}
-
-@media (hover: none) {
-#about {
-
-    background-attachment: initial;
+    
 
 }
 }
