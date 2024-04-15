@@ -276,6 +276,14 @@ body {
     max-width:100%;
 }
 
+@media (hover: none) {
+#about {
+
+    background-attachment: initial;
+
+}
+}
+
   .splitter h3 {
     display: inline-block; 
     text-align: center; 
