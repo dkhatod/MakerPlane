@@ -269,6 +269,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     min-height: 25vh;
+    height: 30vh;
     max-width:100%;
 }
 
